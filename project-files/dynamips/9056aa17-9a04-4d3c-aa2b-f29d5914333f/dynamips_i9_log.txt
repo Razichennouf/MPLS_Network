@@ -1,0 +1,54 @@
+May 11 20:54:50.205 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 11 20:54:50.205 HYPERVISOR: Started on IP = localhost, TCP port = 3919.
+May 11 20:54:50.291 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 20:54:50.291 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips 
+May 11 20:54:50.970 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips
+May 11 20:54:50.970 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\b8ecbc56-0cf3-4c8f-a220-b8cbc5d88284 
+May 11 20:54:50.970 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\b8ecbc56-0cf3-4c8f-a220-b8cbc5d88284
+May 11 20:54:50.974 HYPERVISOR: exec_cmd: vm create CE11 1 c7200 
+May 11 20:54:50.974 VM: VM CE11 created.
+May 11 20:54:50.974 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE11 5000 
+May 11 20:54:50.974 HYPERVISOR: exec_cmd: c7200 get_mac_addr CE11 
+May 11 20:54:50.974 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.974 HYPERVISOR: exec_cmd: vm slot_add_binding CE11 0 0 C7200-IO-FE 
+May 11 20:54:50.974 HYPERVISOR: exec_cmd: vm set_disk0 CE11 0 
+May 11 20:54:50.974 HYPERVISOR: exec_cmd: vm set_exec_area CE11 64 
+May 11 20:54:50.978 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.978 HYPERVISOR: exec_cmd: vm set_idle_pc CE11 0x60189214 
+May 11 20:54:50.978 HYPERVISOR: exec_cmd: vm set_ios CE11 C:/Users/Leonel FEUKOUO/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+May 11 20:54:50.978 HYPERVISOR: exec_cmd: c7200 set_mac_addr CE11 ca01.4118.0000 
+May 11 20:54:50.978 HYPERVISOR: exec_cmd: vm set_nvram CE11 512 
+May 11 20:54:50.978 HYPERVISOR: exec_cmd: vm set_ram CE11 512 
+May 11 20:54:50.978 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.978 HYPERVISOR: exec_cmd: vm slot_remove_binding CE11 0 0 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm slot_add_binding CE11 0 0 C7200-IO-2FE 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm slot_add_binding CE11 1 0 PA-GE 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm slot_add_binding CE11 2 0 PA-GE 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm slot_add_binding CE11 3 0 PA-GE 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm slot_add_binding CE11 4 0 PA-GE 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm slot_add_binding CE11 5 0 PA-8E 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:54:50.982 HYPERVISOR: exec_cmd: vm slot_add_binding CE11 6 0 PA-4T+ 
+May 11 20:54:57.736 HYPERVISOR: exec_cmd: nio create_udp udp-f874b8f1-ef62-4730-b838-e112ea584eae 10002 127.0.0.1 10003 
+May 11 20:54:59.877 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE11 1 0 udp-f874b8f1-ef62-4730-b838-e112ea584eae 
+May 11 20:54:59.881 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 20:55:08.136 HYPERVISOR: exec_cmd: nio create_udp udp-5fe913ca-827f-4688-b2cc-1b8f309ab4b1 10069 127.0.0.1 10070 
+May 11 20:55:08.139 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE11 2 0 udp-5fe913ca-827f-4688-b2cc-1b8f309ab4b1 
+May 11 20:55:08.142 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 21:05:44.340 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 21:05:44.341 HYPERVISOR: exec_cmd: vm extract_config CE11 
+May 11 21:05:51.812 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 21:05:51.813 HYPERVISOR: exec_cmd: vm extract_config CE11 
+May 11 21:05:53.613 HYPERVISOR: exec_cmd: vm get_status CE11 
+May 11 21:05:53.614 HYPERVISOR: exec_cmd: vm extract_config CE11 
+May 11 21:05:53.614 HYPERVISOR: exec_cmd: vm delete CE11 
+May 11 21:05:53.615 VM: VM CE11 destroyed.
+May 11 21:05:53.616 HYPERVISOR: exec_cmd: hypervisor stop 
+May 11 21:05:53.639 HYPERVISOR: Stopped.
+May 11 21:05:53.639 GENERAL: reset done.

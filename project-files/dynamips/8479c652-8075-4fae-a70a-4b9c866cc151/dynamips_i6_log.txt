@@ -1,0 +1,54 @@
+Apr 03 16:51:02.847 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 03 16:51:02.847 HYPERVISOR: Started on IP = localhost, TCP port = 2271.
+Apr 03 16:51:03.331 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 03 16:51:03.331 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips 
+Apr 03 16:51:03.331 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips
+Apr 03 16:51:03.331 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\8479c652-8075-4fae-a70a-4b9c866cc151 
+Apr 03 16:51:04.003 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\8479c652-8075-4fae-a70a-4b9c866cc151
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: vm create PE2 6 c7200 
+Apr 03 16:51:04.003 VM: VM PE2 created.
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE2 5005 
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: c7200 get_mac_addr PE2 
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 0 0 C7200-IO-FE 
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: vm set_disk0 PE2 0 
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: vm set_exec_area PE2 64 
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: vm set_idle_pc PE2 0x60189214 
+Apr 03 16:51:04.003 HYPERVISOR: exec_cmd: vm set_ios PE2 C:/Users/Leonel FEUKOUO/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: c7200 set_mac_addr PE2 ca06.39f4.0000 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm set_nvram PE2 512 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm set_ram PE2 512 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm slot_remove_binding PE2 0 0 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 0 0 C7200-IO-2FE 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 1 0 PA-GE 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 2 0 PA-GE 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 3 0 PA-GE 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 4 0 PA-GE 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:04.019 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 5 0 PA-8E 
+Apr 03 16:51:10.129 HYPERVISOR: exec_cmd: nio create_udp udp-0ed69c3d-fb33-4043-af32-2b3386ea8610 10016 127.0.0.1 10017 
+Apr 03 16:51:10.379 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 3 0 udp-0ed69c3d-fb33-4043-af32-2b3386ea8610 
+Apr 03 16:51:10.379 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:10.441 HYPERVISOR: exec_cmd: nio create_udp udp-404d8b72-915e-45a9-8152-ddd382f83cfc 10020 127.0.0.1 10021 
+Apr 03 16:51:10.441 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 4 0 udp-404d8b72-915e-45a9-8152-ddd382f83cfc 
+Apr 03 16:51:10.441 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:11.128 HYPERVISOR: exec_cmd: nio create_udp udp-bfd4f21a-d910-473e-804c-32dfbf62bd36 10032 127.0.0.1 10033 
+Apr 03 16:51:11.128 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 1 0 udp-bfd4f21a-d910-473e-804c-32dfbf62bd36 
+Apr 03 16:51:11.128 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:11.628 HYPERVISOR: exec_cmd: nio create_udp udp-5f44adf1-e6ba-41a8-9d34-f5a464b5823e 10050 127.0.0.1 10051 
+Apr 03 16:51:11.628 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 2 0 udp-5f44adf1-e6ba-41a8-9d34-f5a464b5823e 
+Apr 03 16:51:11.628 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:44.052 HYPERVISOR: exec_cmd: vm set_ghost_status PE2 2 
+Apr 03 16:51:44.052 HYPERVISOR: exec_cmd: vm set_ghost_file PE2 C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Apr 03 16:51:44.052 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 03 16:51:44.052 HYPERVISOR: exec_cmd: vm set_config PE2 configs\i6_startup-config.cfg configs\i6_private-config.cfg 
+Apr 03 16:51:44.052 HYPERVISOR: exec_cmd: vm start PE2 
+Apr 03 16:52:14.622 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Apr 03 16:52:44.644 HYPERVISOR: exec_cmd: vm extract_config PE2 

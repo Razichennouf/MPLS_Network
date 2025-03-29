@@ -1,0 +1,51 @@
+Apr 03 16:51:04.643 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 03 16:51:04.643 HYPERVISOR: Started on IP = localhost, TCP port = 2277.
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips 
+Apr 03 16:51:05.143 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\de7ee875-ed96-430e-85e3-f823bd8deb32 
+Apr 03 16:51:05.143 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\de7ee875-ed96-430e-85e3-f823bd8deb32
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm create P2 8 c7200 
+Apr 03 16:51:05.143 VM: VM P2 created.
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm set_con_tcp_port P2 5007 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: c7200 get_mac_addr P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm slot_add_binding P2 0 0 C7200-IO-FE 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm set_disk0 P2 0 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm set_exec_area P2 64 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm set_idle_pc P2 0x60189214 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm set_ios P2 C:/Users/Leonel FEUKOUO/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: c7200 set_mac_addr P2 ca08.3be4.0000 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm set_nvram P2 512 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm set_ram P2 512 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm slot_remove_binding P2 0 0 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm slot_add_binding P2 0 0 C7200-IO-2FE 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm slot_add_binding P2 1 0 PA-GE 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm slot_add_binding P2 2 0 PA-GE 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm slot_add_binding P2 3 0 PA-GE 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm slot_add_binding P2 4 0 PA-GE 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:05.143 HYPERVISOR: exec_cmd: vm slot_add_binding P2 5 0 PA-8E 
+Apr 03 16:51:11.144 HYPERVISOR: exec_cmd: nio create_udp udp-00571544-ffca-497f-91b1-e72fe972f16f 10034 127.0.0.1 10035 
+Apr 03 16:51:11.394 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P2 2 0 udp-00571544-ffca-497f-91b1-e72fe972f16f 
+Apr 03 16:51:11.394 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:11.472 HYPERVISOR: exec_cmd: nio create_udp udp-983b117d-8174-4e28-9222-39f06d3a13b6 10040 127.0.0.1 10041 
+Apr 03 16:51:11.472 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P2 1 0 udp-983b117d-8174-4e28-9222-39f06d3a13b6 
+Apr 03 16:51:11.472 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:11.550 HYPERVISOR: exec_cmd: nio create_udp udp-b7765ea8-ff46-4ba7-a9e4-b949c7a2f08c 10046 127.0.0.1 10047 
+Apr 03 16:51:11.566 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P2 3 0 udp-b7765ea8-ff46-4ba7-a9e4-b949c7a2f08c 
+Apr 03 16:51:11.566 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:44.630 HYPERVISOR: exec_cmd: vm set_ghost_status P2 2 
+Apr 03 16:51:44.630 HYPERVISOR: exec_cmd: vm set_ghost_file P2 C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Apr 03 16:51:44.630 HYPERVISOR: exec_cmd: vm get_status P2 
+Apr 03 16:51:44.630 HYPERVISOR: exec_cmd: vm set_config P2 configs\i8_startup-config.cfg configs\i8_private-config.cfg 
+Apr 03 16:51:44.630 HYPERVISOR: exec_cmd: vm start P2 
+Apr 03 16:52:15.559 HYPERVISOR: exec_cmd: vm extract_config P2 
+Apr 03 16:52:45.559 HYPERVISOR: exec_cmd: vm extract_config P2 

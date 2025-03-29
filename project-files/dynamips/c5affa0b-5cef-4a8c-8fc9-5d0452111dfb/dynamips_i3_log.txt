@@ -1,0 +1,45 @@
+Apr 03 16:51:00.926 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 03 16:51:00.926 HYPERVISOR: Started on IP = localhost, TCP port = 2262.
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips 
+Apr 03 16:51:01.410 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\c5affa0b-5cef-4a8c-8fc9-5d0452111dfb 
+Apr 03 16:51:01.410 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\c5affa0b-5cef-4a8c-8fc9-5d0452111dfb
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm create CE12 3 c7200 
+Apr 03 16:51:01.410 VM: VM CE12 created.
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE12 5002 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: c7200 get_mac_addr CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm slot_add_binding CE12 0 0 C7200-IO-FE 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm set_disk0 CE12 0 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm set_exec_area CE12 64 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm set_idle_pc CE12 0x60189214 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm set_ios CE12 C:/Users/Leonel FEUKOUO/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: c7200 set_mac_addr CE12 ca03.4190.0000 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm set_nvram CE12 512 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm set_ram CE12 512 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm slot_remove_binding CE12 0 0 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm slot_add_binding CE12 0 0 C7200-IO-2FE 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm slot_add_binding CE12 1 0 PA-GE 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm slot_add_binding CE12 2 0 PA-GE 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm slot_add_binding CE12 3 0 PA-GE 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm slot_add_binding CE12 4 0 PA-GE 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:01.410 HYPERVISOR: exec_cmd: vm slot_add_binding CE12 5 0 PA-8E 
+Apr 03 16:51:09.863 HYPERVISOR: exec_cmd: nio create_udp udp-48c55fe3-bc07-4262-bceb-b9b10fe242a4 10014 127.0.0.1 10015 
+Apr 03 16:51:10.129 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE12 1 0 udp-48c55fe3-bc07-4262-bceb-b9b10fe242a4 
+Apr 03 16:51:10.129 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:43.303 HYPERVISOR: exec_cmd: vm set_ghost_status CE12 2 
+Apr 03 16:51:43.303 HYPERVISOR: exec_cmd: vm set_ghost_file CE12 C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Apr 03 16:51:43.318 HYPERVISOR: exec_cmd: vm get_status CE12 
+Apr 03 16:51:43.427 HYPERVISOR: exec_cmd: vm set_config CE12 configs\i3_startup-config.cfg configs\i3_private-config.cfg 
+Apr 03 16:51:43.427 HYPERVISOR: exec_cmd: vm start CE12 
+Apr 03 16:52:13.997 HYPERVISOR: exec_cmd: vm extract_config CE12 
+Apr 03 16:52:44.005 HYPERVISOR: exec_cmd: vm extract_config CE12 

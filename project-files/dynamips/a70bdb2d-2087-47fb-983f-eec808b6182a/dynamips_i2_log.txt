@@ -1,0 +1,60 @@
+Apr 03 16:51:00.363 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 03 16:51:00.379 HYPERVISOR: Started on IP = localhost, TCP port = 2259.
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips 
+Apr 03 16:51:00.863 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\a70bdb2d-2087-47fb-983f-eec808b6182a 
+Apr 03 16:51:00.863 GENERAL: working_dir=C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\a70bdb2d-2087-47fb-983f-eec808b6182a
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm create CE21 2 c7200 
+Apr 03 16:51:00.863 VM: VM CE21 created.
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE21 5001 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: c7200 get_mac_addr CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm slot_add_binding CE21 0 0 C7200-IO-FE 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm set_disk0 CE21 0 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm set_exec_area CE21 64 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm set_idle_pc CE21 0x60189214 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm set_ios CE21 C:/Users/Leonel FEUKOUO/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: c7200 set_mac_addr CE21 ca02.4268.0000 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm set_nvram CE21 512 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm set_ram CE21 512 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm slot_remove_binding CE21 0 0 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm slot_add_binding CE21 0 0 C7200-IO-2FE 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm slot_add_binding CE21 1 0 PA-GE 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm slot_add_binding CE21 2 0 PA-GE 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm slot_add_binding CE21 3 0 PA-GE 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm slot_add_binding CE21 4 0 PA-GE 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:00.863 HYPERVISOR: exec_cmd: vm slot_add_binding CE21 5 0 PA-8E 
+Apr 03 16:51:09.551 HYPERVISOR: exec_cmd: nio create_udp udp-b0af715b-64a1-4659-9049-7557ed13bca7 10008 127.0.0.1 10009 
+Apr 03 16:51:09.801 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE21 1 0 udp-b0af715b-64a1-4659-9049-7557ed13bca7 
+Apr 03 16:51:09.801 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:40.379 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Apr 03 16:51:40.379 VM: VM Ghost created.
+Apr 03 16:51:40.379 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Leonel FEUKOUO/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Apr 03 16:51:40.379 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 03 16:51:40.379 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Apr 03 16:51:40.379 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Apr 03 16:51:40.379 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 03 16:51:40.495 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Apr 03 16:51:40.495 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 03 16:51:41.908 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 03 16:51:41.908 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 03 16:51:43.178 VM: VM Ghost shutdown.
+Apr 03 16:51:43.178 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Apr 03 16:51:43.178 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 03 16:51:43.178 VM: VM Ghost destroyed.
+Apr 03 16:51:43.240 HYPERVISOR: exec_cmd: vm set_ghost_status CE21 2 
+Apr 03 16:51:43.240 HYPERVISOR: exec_cmd: vm set_ghost_file CE21 C:\Users\Leonel FEUKOUO\Desktop\Securite Reseau\Projet\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Apr 03 16:51:43.240 HYPERVISOR: exec_cmd: vm get_status CE21 
+Apr 03 16:51:43.303 HYPERVISOR: exec_cmd: vm set_config CE21 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Apr 03 16:51:43.318 HYPERVISOR: exec_cmd: vm start CE21 
+Apr 03 16:52:13.900 HYPERVISOR: exec_cmd: vm extract_config CE21 
+Apr 03 16:52:43.912 HYPERVISOR: exec_cmd: vm extract_config CE21 
